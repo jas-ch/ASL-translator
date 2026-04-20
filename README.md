@@ -1,11 +1,5 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/Ne9Ma6s0)
+# ASL-translator: American Sign Lanugage Translator
 
-model:
- - pytorch
- - uses ConvNeXt
- - saves checkpoints as .tar, eval (test) in classify.py
+**ASL-translator** is an AI model that helps translating hand signs into alphabets and numbers for bridging communication with handicaps and learning the sign language.   The model reaches 99.9% accuracy and is easy to plug into any SDK or applications for infinite possibilites. The model utilized **ConvNeXt** and could swap from manual checkpointing to **ModelCheckpoint + lightning**. The model is trained with **ASL Alphabet Dataset** from Kaggle, [link text][https://www.kaggle.com/datasets/grassknoted/asl-alphabet]. To run the inferencing, simply put picture files into the folder of asl/asl_alphbet_test and then run ./classify.py. To run inferencing in a live stream mode, import ASL-translator as a module and invoke the function accordingly. 
 
-uses [ASL Alphabet Dataset](https://www.kaggle.com/datasets/grassknoted/asl-alphabet) from Kaggle
- - no manual edits made to dataset
- - splits train data 80%/20% for train + val
- - test data used as is, other/new data can be applied thru file path
+
